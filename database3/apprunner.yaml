@@ -1,15 +1,7 @@
 version: 1.0
-runtime: java17
-build:
-  commands:
-    build:
-      - chmod +x mvnw
-      - ./mvnw clean package -DskipTests
-run:
-  runtime-version: 17
-  command: java -jar target/*.jar
-  network:
-    port: 8080
-  env:
-    - name: SERVER_PORT
-      value: "8080"
+source:
+  image_repository:
+    image_identifier: 123456789012.dkr.ecr.us-east-1.amazonaws.com/Alex/books:latest
+    image_repository_type: ECR
+runtime_configuration:
+  port: 8080
