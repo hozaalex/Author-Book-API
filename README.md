@@ -22,7 +22,7 @@ The service implements a full **JWT (JSON Web Token)** authentication flow using
     * Comprehensive architectural structure (Controllers, Services, Repositories, Filters).
     * Includes **Integration Tests** to guarantee API reliability and correct data handling.
 
-## 🚀 Technologies
+##  Technologies
 
 | Technology | Purpose |
 | :--- | :--- |
