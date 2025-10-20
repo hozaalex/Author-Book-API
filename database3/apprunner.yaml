@@ -1,0 +1,15 @@
+version: 1.0
+runtime: java17
+build:
+  commands:
+    build:
+      - chmod +x mvnw
+      - ./mvnw clean package -DskipTests
+run:
+  runtime-version: 17
+  command: java -jar target/*.jar
+  network:
+    port: 8080
+  env:
+    - name: SERVER_PORT
+      value: "8080"
